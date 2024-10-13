@@ -16,7 +16,8 @@ extra_files=files(
     'README.md', 'COPYING',
     'tests/sanity/signal_and_slots.sh',
     'tests/manual-tests/common.py',
-    'resources/resources.qrc'
+    'resources/resources.qrc',
+    'resources/README.md'
 )
 
 if get_option('buildtype').startswith('release')
