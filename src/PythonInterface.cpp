@@ -61,7 +61,6 @@ extern "C"
 #include "SciQLopPlots/Python/PythonInterface.hpp"
 
 #include <QCoreApplication>
-#include <QThread>
 #include <mutex>
 #include <vector>
 
@@ -611,7 +610,7 @@ struct _GetDataPyCallable_impl
         if (_is_valid)
         {
             auto scoped_gil = PyAutoScopedGIL();
-            auto args = PyTuple_New(2);
+            auto args = PyTuple_New(3);
             Py_IncRef(x.py_object());
             Py_IncRef(y.py_object());
             Py_IncRef(z.py_object());
