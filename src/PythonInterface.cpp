@@ -61,6 +61,7 @@ extern "C"
 #include "SciQLopPlots/Python/PythonInterface.hpp"
 
 #include <QCoreApplication>
+#include <QThread>
 #include <mutex>
 #include <vector>
 
